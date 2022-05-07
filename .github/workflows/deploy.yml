@@ -1,0 +1,21 @@
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout main Branch
+        uses: actions/checkout@v3
+      - name: Build and Deploy
+        uses: shalzz/zola-deploy-action@master
+        env:
+          # Target Branch
+          PAGES_BRANCH: gh-pages
+          # provide access token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
