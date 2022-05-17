@@ -5,5 +5,12 @@
     <header>{% include "partials/navbar.html" %}</header>
     <main id="main" class="root">{% block root %} {% endblock %}</main>
     {% include "partials/footer.html" %}
+    <script>
+      let today = new Date();
+      let currentYear = today.getFullYear();
+      document.querySelector(
+        '#copyright'
+      ).innerHTML = `Copyright &copy; ${currentYear}, Nrishinghananda Roy (royrustdev.com). All Rights Reserved.`;
+    </script>
   </body>
 </html>
