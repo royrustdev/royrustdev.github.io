@@ -1,0 +1,67 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#52a3ff" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="author" content="Nrishinghananda Roy, royrustdev@gmail.com" />
+  <meta name="owner" content="Nrishinghananda Roy" />
+  <meta name="subject" content="software developer,rust,blockchain developer" />
+  <meta name="category" content="software developer,blockchain developer" />
+  <meta
+    name="topic"
+    content="portfolio,rust,blockchain,software development,devops"
+  />
+  <meta name="subtitle" content="royrustdev" />
+  <meta name="url" content="{{ config.base_url }}" />
+  <meta name="identifier-URL" content="{{ config.base_url }}" />
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  />
+  <meta
+    name="keywords"
+    content="Software Engineer,royrustdev,Nrishinghananda,DevOps Engineer,devops engineer"
+  />
+  <meta name="description" content="{{ config.description }}" />
+  <title>
+    {%- if page.title -%} {{ page.title }} {% elif section.title %} {{
+    section.title }} {%- else -%} {{ config.title }} {%- endif -%}
+  </title>
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title | striptags }}" />
+  <meta property="og:title" content="{{ page.title | striptags }}" />
+  {% elif section.title %}
+  <meta name="twitter:title" content="{{ section.title | striptags }}" />
+  <meta property="og:title" content="{{ section.title | striptags }}" />
+  {% else %}
+  <meta name="twitter:title" content="{{ config.title | striptags }}" />
+  <meta property="og:title" content="{{ config.title | striptags }}" />
+  {% endif %} {% if page.permalink %}
+  <meta property="og:url" content="{{ page.permalink | striptags }}" />
+  {% elif section.title %}
+  <meta property="og:url" content="{{ section.permalink | striptags }}" />
+  {% else %}
+  <meta property="og:url" content="{{ config.base_url | striptags }}" />
+  {% endif %} {% if page.summary %}
+  <meta name="twitter:description" content="{{ page.summary | striptags }}" />
+  <meta property="og:description" content="{{ page.summary | striptags }}" />
+  {% elif section.summary %}
+  <meta
+    name="twitter:description"
+    content="{{ section.summary | striptags }}"
+  />
+  <meta property="og:description" content="{{ section.summary | striptags }}" />
+  {% else %}
+  <meta
+    name="twitter:description"
+    content="{{ config.description | striptags }}"
+  />
+  <meta
+    property="og:description"
+    content="{{ config.description | striptags }}"
+  />
+  {% endif %}
+</head>
