@@ -1,18 +1,12 @@
 <nav class="nav">
   <div class="nav--logo">
-    <strong>royrustdev</strong>
+    <a href="{{get_url(path='/')}}"
+      ><img src="{{get_url(path='/royrustdev.svg')}}" alt="royrustdev logo"
+    /></a>
   </div>
-  <div class="nav--about"><a href="/about">about</a></div>
-  <div class="nav--blog"><a href="/blog">blog</a></div>
-  <div class="nav--blog">
-    <a href="/projects">projects</a>
+  <div class="nav--about"><a href="{{get_url(path='/about')}}">about</a></div>
+  <div class="nav--projects">
+    <a href="{{get_url(path='/projects')}}">projects</a>
   </div>
-  <div class="nav--hireme">
-    <a
-      href="https://www.linkedin.com/in/nrishinghananda-roy-b5ab90230/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >HIRE</a
-    >
-  </div>
+  <div class="nav--blog"><a href="{{get_url(path='/blog')}}">blog</a></div>
 </nav>
