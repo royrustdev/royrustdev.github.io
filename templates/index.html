@@ -1,5 +1,130 @@
 {% extends "base.html" %} {% block root %}
 
-<h1 class="title">Site is coming to life. Please stay tuned.</h1>
+<section class="hero">
+  <img
+    src="{{get_url(path='/img/profile.png')}}"
+    alt="A black and white image
+  of Nrishinghananda Roy"
+    class="hero--img"
+  />
+  <h1 class="hero--title">Rust Software Engineer</h1>
+</section>
+<section class="description">
+  <p>Hi, my name is</p>
+  <h2>Nrishinghananda Roy</h2>
+  <h3>I build secure, fast & scalable cloud-native application using Rust.</h3>
+  <p class="description--text">
+    I'm a software enginner specializing in backend and DevOps. I love Rust due
+    to it's strong type system, amazing ownership and borrowing architecture, a
+    great compiler & a very friendly developer community. Apart from Rust, I
+    love algorithms, data-structure and mathematics. It enriches my intellect &
+    help me to become a better programmer. Currently, I'm focused on building
+    cloud-native application.
+  </p>
+</section>
+<section class="skills">
+  <h2>MY SKILLS</h2>
+  <div class="skills--container">
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/rust.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Rust</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/bash.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Shell Script</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/postgresql.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">PostgreSQL</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/kubernetes.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Kubernetes</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/docker.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Docker</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/cicd.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">CI/CD</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/aws.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">AWS</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/nodejs.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Node.js</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/vuejs.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Vue.js</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/ts.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Typescript</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/js.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">Javascript</p>
+    </div>
+    <div class="skills--box">
+      <img
+        src="{{get_url(path='/icons/skills/scss.svg')}}"
+        alt="icon"
+        class="skills--box--img"
+      />
+      <p class="skills--box--name">SCSS</p>
+    </div>
+  </div>
+</section>
+<section class="about"></section>
+<section class="projects"></section>
+<section class="blog"></section>
 
-{% endblock root %}
+{% endblock root %} {#
