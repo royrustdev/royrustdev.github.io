@@ -4,7 +4,7 @@
   <body>
     <header>{% include "partials/navbar.html" %}</header>
     <main id="main" class="root">{% block root %} {% endblock %}</main>
-    {% include "partials/footer.html" %}
+    <footer class="footer">{% include "partials/footer.html" %}</footer>
     <script>
       let today = new Date();
       let currentYear = today.getFullYear();
