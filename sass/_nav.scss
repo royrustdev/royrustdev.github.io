@@ -1,0 +1,28 @@
+.nav {
+  height: 7rem;
+  width: 100%;
+  background: $nav--bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem 0 0;
+  &--logo {
+    padding: 0 0 0 0.3rem;
+  }
+  &--links {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &--item {
+      color: $text--dark;
+      margin: 0.2rem;
+      cursor: pointer;
+      font-size: $fs--nav--link;
+      &:hover {
+        background: $bg--glass--one;
+      }
+    }
+  }
+}

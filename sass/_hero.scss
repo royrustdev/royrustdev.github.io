@@ -1,0 +1,29 @@
+.hero {
+  padding: $global--padding;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $hero--bg;
+  &--img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 0.2rem solid $primary-border-color;
+  }
+  font-family: 'Lato', sans-serif;
+  &--name {
+    color: $text--light;
+    font-size: $fs--hero--name;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    font-weight: 900;
+  }
+  &--title {
+    color: $text--light;
+    font-size: $fs--hero--title;
+    text-align: center;
+    font-weight: 700;
+  }
+}

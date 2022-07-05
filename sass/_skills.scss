@@ -1,0 +1,40 @@
+.skills {
+  background: $bg--skills;
+  padding: $global--padding;
+  font-family: 'Delius', cursive;
+  font-weight: 400;
+  h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: $fs--section--header;
+    color: $text--dark;
+  }
+  &--container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  &--box {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $text--light;
+    background-color: $bg--glass--two;
+    box-shadow: $glass-box-shadow;
+    border: $glass-border;
+    border-radius: 10px;
+    &--img {
+      width: $w--skill--img;
+      height: $h--skill--img;
+      padding: 1rem;
+    }
+    &--name {
+      font-size: $fs--skill--name;
+    }
+  }
+}

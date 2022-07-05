@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'nav';
+@import 'hero';
+@import 'description';
+@import 'about';
+@import 'skills';
+@import 'footer';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+#logo {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+//TODO add media-queries

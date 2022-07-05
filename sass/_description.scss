@@ -1,0 +1,17 @@
+.description {
+  font-family: 'Delius', cursive;
+  font-weight: 400;
+  padding: $global--padding;
+  background: $bg--light;
+  &--title {
+    color: $text--dark;
+    font-size: $fs--description--title;
+    padding-bottom: 1rem;
+  }
+  &--text {
+    color: $text--mid;
+    font-size: $fs--description--text;
+    text-align: justify;
+  }
+}
+

@@ -1,0 +1,24 @@
+.footer {
+  z-index: 1;
+  overflow: auto;
+  max-width: 100vw;
+  place-self: stretch;
+  background: $bg--dark;
+  font-family: 'Delius', cursive;
+  font-weight: 400;
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+    &--item {
+      margin-right: 0.3rem;
+    }
+  }
+  &--copyright {
+    color: $text--light;
+    font-size: $fs--copyright;
+    text-align: center;
+    padding:0 0.3rem 1.5rem 0.3rem;
+  }
+}
