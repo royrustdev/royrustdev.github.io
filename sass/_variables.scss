@@ -1,0 +1,58 @@
+//linear gradient backgrounds
+$nav--bg: linear-gradient(to bottom right, #edfc19, #fd1c7a);
+$hero--bg: linear-gradient(to bottom right, #a960ee, #05defa);
+$bg--skills: linear-gradient(to bottom right, #567ac9, #0d084d);
+
+//background colors
+$bg--light: #dfe3ee;
+$bg--mid: #567ac9;
+$bg--dark: #0d084d;
+
+//text colors
+$text--light: #ffffff;
+$text--mid: #05386b;
+$text--dark: #120e47;
+
+//call to action colors
+$cta--green:  #5cdb95;
+$cta--red:  #fd1c7a;
+$cta--yellow: #edfc19;
+$cta--blue: #6dd5ed;
+
+//TODO macos like window layout
+//macos window dots color to create window layout
+$dot-left: #fc6052;
+$dot-mid: #fec02f;
+$dot-right: #2aca3e;
+
+//general purpose color
+$violet: #a960ee;
+$yellow: #ffcb57;
+$skyblue: #05defa;
+
+//border colors
+$primary-border-color: #f80a6d;
+$secondary-border-color: #0bec96;
+$tertiary-border-color: #120e47;
+
+//glassmorphism
+$bg--glass--one: rgba(255, 255, 255, 0.55);
+$bg--glass--two: rgba(255, 255, 255, 0.3);
+$glass-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+$glass-border: 1px solid rgba(255, 255, 255, 0.18);
+
+// font sizes
+$fs--nav--link: 0.8rem;
+$global--padding: 2rem;
+$fs--hero--name: 1.2rem;
+$fs--hero--title: 1rem;
+$fs--description--title: 1rem;
+$fs--description--text: 0.8rem;
+$fs--about--text: 0.8rem;
+$fs--section--header: 1.2rem;
+$fs--skill--name: 1.2rem;
+$fs--copyright: 0.6rem;
+$w--skill--img: 6.4rem;
+$h--skill--img: 6.4rem;
+
+//more goes here
