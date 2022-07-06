@@ -8,12 +8,15 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="author" content="Nrishinghananda Roy, royrustdev@gmail.com" />
   <meta name="owner" content="Nrishinghananda Roy" />
-  <meta name="subject" content="software developer,rust,blockchain developer" />
-  <meta name="category" content="software developer,blockchain developer" />
   <meta
-    name="topic"
-    content="portfolio,rust,blockchain,software development,devops"
+    name="subject"
+    content="rust, rust language, software engineering, software engineer, aws"
   />
+  <meta
+    name="category"
+    content="rust, computer and technology, software engineering"
+  />
+  <meta name="topic" content="portfolio,rust,software development,devops" />
   <meta name="subtitle" content="royrustdev" />
   <meta name="url" content="{{ config.base_url }}" />
   <meta name="identifier-URL" content="{{ config.base_url }}" />
@@ -26,6 +29,8 @@
     content="Software Engineer,royrustdev,Nrishinghananda,DevOps Engineer,devops engineer"
   />
   <meta name="description" content="{{ config.description }}" />
+  <meta itemprop="description" content="{{ config.description | striptags }}" />
+  <meta itemprop="image" content="https://royrustdev.com/royrustdev.svg" />
   <title>
     {%- if page.title -%} {{ page.title }} {% elif section.title %} {{
     section.title }} {%- else -%} {{ config.title }} {%- endif -%}
@@ -64,6 +69,13 @@
     content="{{ config.description | striptags }}"
   />
   {% endif %}
+  <meta
+    name="twitter:image:src"
+    content="https://royrustdev.com/royrustdev.svg"
+  />
+  <meta name="twitter:image" content="https://royrustdev.com/royrustdev.svg" />
+  <meta property="og:image" content="https://royrustdev.com/royrustdev.svg" />
+  <meta name="og:image" content="https://royrustdev.com/royrustdev.svg" />
   <link rel="icon" type="image/ico" href="/favicon.ico" />
   <link rel="icon" type="image/ico" href="https://royrustdev.com/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
