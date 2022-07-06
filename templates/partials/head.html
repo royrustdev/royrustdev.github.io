@@ -6,35 +6,33 @@
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="author" content="Nrishinghananda Roy, royrustdev@gmail.com" />
-  <meta name="owner" content="Nrishinghananda Roy" />
-  <meta
-    name="subject"
-    content="rust, rust language, software engineering, software engineer, aws"
-  />
-  <meta
-    name="category"
-    content="rust, computer and technology, software engineering"
-  />
-  <meta name="topic" content="portfolio,rust,software development,devops" />
-  <meta name="subtitle" content="royrustdev" />
-  <meta name="url" content="{{ config.base_url }}" />
-  <meta name="identifier-URL" content="{{ config.base_url }}" />
   <meta
     name="apple-mobile-web-app-status-bar-style"
     content="black-translucent"
   />
-  <meta
-    name="keywords"
-    content="Software Engineer,royrustdev,Nrishinghananda,DevOps Engineer,devops engineer"
-  />
-  <meta name="description" content="{{ config.description }}" />
-  <meta itemprop="description" content="{{ config.description | striptags }}" />
-  <meta itemprop="image" content="https://royrustdev.com/royrustdev.svg" />
+  <!--site information-->
   <title>
     {%- if page.title -%} {{ page.title }} {% elif section.title %} {{
     section.title }} {%- else -%} {{ config.title }} {%- endif -%}
   </title>
+  <meta name="description" content="{{ config.description }}" />
+
+  <!-- Twitter content -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  {%- if page.extra.image.path -%} {%- set image =
+  colocated_asset::colocated_asset(path=page.extra.image.path) | trim -%} {%
+  elif section.extra.image.path %} {%- set image =
+  colocated_asset::colocated_asset(path=section.extra.image.path) | trim -%} {%-
+  else -%} {%- set image = '../static/' ~ config.extra.cover.path -%} {%- endif
+  -%} {% set image_200 = resize_image(path=image, width=200, height=250,
+  op='fit_width') %}
+
+  <meta name="twitter:image" content="{{ image_200.url }}" />
+  <meta property="og:image" content="{{ image_200.url }}" />
+  <meta name="twitter:site" content="@{{ config.extra.twitter }}" />
+  <meta name="twitter:creator" content="@{{ config.extra.twitter }}" />
+
   {% if page.title %}
   <meta name="twitter:title" content="{{ page.title | striptags }}" />
   <meta property="og:title" content="{{ page.title | striptags }}" />
@@ -69,21 +67,56 @@
     content="{{ config.description | striptags }}"
   />
   {% endif %}
-  <meta
-    name="twitter:image:src"
-    content="https://royrustdev.com/royrustdev.svg"
+
+  <!-- homepage and the rss feed. -->
+  <link rel="canonical" href="{{ config.base_url }}" />
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{ config.base_url }}/rss.xml"
   />
-  <meta name="twitter:image" content="https://royrustdev.com/royrustdev.svg" />
-  <meta property="og:image" content="https://royrustdev.com/royrustdev.svg" />
-  <meta name="og:image" content="https://royrustdev.com/royrustdev.svg" />
+
+  <!-- general -->
+  <meta name="author" content="{{ config.extra.author}}" />
+  <meta name="owner" content="Nrishinghananda Roy" />
+  <meta
+    name="subject"
+    content="rust, rust language, software engineering, software engineer, aws"
+  />
+  <meta
+    name="category"
+    content="rust, computer and technology, software engineering"
+  />
+  <meta name="topic" content="portfolio,rust,software development,devops" />
+  <meta name="subtitle" content="royrustdev" />
+  <meta name="url" content="{{ config.base_url }}" />
+  <meta name="identifier-URL" content="{{ config.base_url }}" />
+  <meta
+    name="keywords"
+    content="Software Engineer,royrustdev,Nrishinghananda,DevOps Engineer,devops engineer"
+  />
+
+  <!-- favicon -->
   <link rel="icon" type="image/ico" href="/favicon.ico" />
   <link rel="icon" type="image/ico" href="https://royrustdev.com/favicon.ico" />
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Delius&family=Lato:wght@700;900&display=swap"
     rel="stylesheet"
   />
+  <!-- css styles -->
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://royrustdev.com/main.css" />
 </head>
+
+<!--
+  <meta
+    name="twitter:image:src"
+    content="https://royrustdev.com/royrustdev.png"
+  />
+  <meta name="twitter:image" content="https://royrustdev.com/royrustdev.png" />
+  <meta property="og:image" content="https://royrustdev.com/royrustdev.png" />
+  <meta name="og:image" content="https://royrustdev.com/royrustdev.png" />
+  -->
